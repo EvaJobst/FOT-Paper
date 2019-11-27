@@ -1,0 +1,85 @@
+\documentclass[a4paper, 11pt]{article}
+
+% Language and encoding.
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+% Set fonts (in order to deal with umlauts).
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+% Sets page size and margins.
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=3cm, right=3cm, marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{url}
+
+% Lorem Ipsum package to generate dummy text. Simply remove it.
+\usepackage{lipsum}
+
+% Creative Commons license package.
+\usepackage[
+    type={CC},
+    modifier={by-nc-sa},
+    version={4.0},
+]{doclicense}
+
+% hyperref package to color links.
+%\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+% Todo notes.
+%\usepackage[textsize=footnotesize, backgroundcolor=yellow!10, linecolor=gray!35]{todonotes} 
+
+\title{Seminar paper title}
+
+\begin{document}
+
+\date{\today}
+\author{A. N. Other and A. N. Other}
+\maketitle
+
+\section{Introduction} \label{sec:intro}
+
+To ensure best compatibility with version control (e.g.\ git), it is best to write one sentence per line and configure your editor not to hard-break lines.
+For citations use \cite{BakSchaLewRotBla11} or \cite[p.\ 6--8]{BakSchaLewRotBla11}.
+For quotes use, for example,
+\begin{quote}
+	``This is a proper quote.'' \cite[p.\ 6]{BakSchaLewRotBla11}
+\end{quote}
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=0.25\textwidth]{figures/logo.png}
+\caption{LaTeX logo.} \label{fig:logo}
+\end{figure}
+
+Sometimes, we would like to include figures.
+This sentence provides an example of referencing to Fig.~\ref{fig:logo}.
+
+You can of course also refer to Sec.~\ref{sec:intro} or to Sec.~\ref{sec:intro:motivation}.
+
+Footnotes are includes, for example, here.\footnote{A footnote containing a link \url{https://free-and-open-technologies.github.io}}
+
+% Creates dummy text. Simply remove.
+\lipsum[1]
+
+\subsection{Motivation} \label{sec:intro:motivation}
+
+% Creates dummy text. Simply remove.
+\lipsum[2-4]
+
+% References section.
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+% Delete sentence with emails if you don't want to be contacted.
+\paragraph{About this document.} This seminar paper was written as part of the lecture \emph{Free and Open Technologies}, held by Christoph Derndorfer and Lukas~F.\ Lang at TU Wien, Austria, during the winter term 2019/2020.
+The authors A.~N.~Other and A.~N.~Other can be contacted by email at \url{e9999999@student.tuwien.ac.at} and at \url{e9999999@student.tuwien.ac.at}.
+All selected papers can be found online.\footnote{\url{https://free-and-open-technologies.github.io}}
+
+% Add CC license.
+\doclicenseThis
+
+\end{document}
