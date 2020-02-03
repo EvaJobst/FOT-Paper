@@ -25,6 +25,7 @@
 
 % hyperref package to color links.
 %\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 % Todo notes.
 %\usepackage[textsize=footnotesize, backgroundcolor=yellow!10, linecolor=gray!35]{todonotes} 
@@ -44,14 +45,14 @@ Some abstract...
 \section{Introduction} \label{sec:intro}
 Gender discrimination is a problem, especially in the technology industry. A recent study~\cite{terrell2017gender} looked at GitHub, one of the most popular software repositories with 14 million users, to see if the effect can be seen by comparing pull requests between male and female contributors. A pull request happens when someone proposes changes on a software code repository that is being hosted on GitHub. The request can either be accepted or denied by the owners of the repository. The researchers found that the approval rates of pull requests, when made without revealing one’s gender, were comparable between both genders~\cite{terrell2017gender}. The rate of approval for women fell significantly if the coder’s gender was identifiable upon requesting a pull whereas the rates for men did not change much~\cite{terrell2017gender}.
 
-Wikipedia, the largest encyclopedia humanity has ever created, also has a gender problem. Estimations about exact numbers are difficult to find but it is undisputed, that most contributors and even editors are of male gender (see Figure~\ref{fig:PropFemaleEditors}). The latter is important since editors, specifically veteran editors, do have the powers to reject articles and restrict access of other contributors which has a severe impact on the acceptance rate regarding articles that are written about female figures. The resulting bias with respect to the variety of content is increasingly recognized leading to Wikipedia’s gender gap to be an ever-increasing topic of interest, drawing the attention of scholars of new media and similar fields.
+Wikipedia, the largest encyclopedia humanity has ever created, also has a gender problem. Estimations about exact numbers are difficult to find but it is undisputed, that most contributors and even editors are of male gender (see~\autoref{fig:PropFemaleEditors}). The latter is important since editors, specifically veteran editors, do have the powers to reject articles and restrict access of other contributors which has a severe impact on the acceptance rate regarding articles that are written about female figures. The resulting bias with respect to the variety of content is increasingly recognized leading to Wikipedia’s gender gap to be an ever-increasing topic of interest, drawing the attention of scholars of new media and similar fields.
 
 Discussing the systemic bias on Wikipedia is important as the platform poses the most powerful source of information worldwide. It is available in 275 languages and is being accessed by millions of people regularly~\cite{zachte2018}. Many assistive devices and applications such as Smartwatches, Google Assistant, Alexa, Siri or Cortana draw their knowledge directly from Wikipedia without informing their users about the source or authors. Through these developments, the world, as it is represented by Wikipedia, is widely being considered as natural.
 
 In this work, we address gender bias discrepancies within the technology industry by providing an overview over the state-of-the-art in research around the gender gap in open data and open source domains. Additionally, we try to measure possible trends for the future of digital environments that have collaborative characteristics, draw implications for the quality of publicly available information and participation rates and provide suggestions that may have an impact on future developments.
 
 \section{Considerations} \label{sec:considerations}
-Most studies on gender bias have been conducted either in Europe or in the United States. Only very few researchers actively work on that topic from other parts of the world. The participants of the studies conducted are more likely to be people from those geographical regions. Thus, their provided data and insights inherently carry strong biases and are not globally representative. A lot of studies in this area are user studies, which poses an issue in our specific case as it can be shown, that women are overall less likely to participate in studies compared to men due to gender-based differences influencing their motivations~\cite{lobato2014impact}. As an example, this phenomenon has an impact on the data used in Figure~\ref{fig:PropFemaleEditors} since the underlying studies could be skewed accordingly.
+Most studies on gender bias have been conducted either in Europe or in the United States. Only very few researchers actively work on that topic from other parts of the world. The participants of the studies conducted are more likely to be people from those geographical regions. Thus, their provided data and insights inherently carry strong biases and are not globally representative. A lot of studies in this area are user studies, which poses an issue in our specific case as it can be shown, that women are overall less likely to participate in studies compared to men due to gender-based differences influencing their motivations~\cite{lobato2014impact}. As an example, this phenomenon has an impact on the data used in~\autoref{fig:PropFemaleEditors} since the underlying studies could be skewed accordingly.
 
 \section{Gender Gap in Wikipedia} \label{sec:gender-gap-wikipedia}
 In the following we examine several issues connected to Wikipedia’s gender gap and different reasons that are responsible for the low contribution rates of female participants or the low acceptance rate regarding articles about women. We then also make suggestions on how to combat these issues effectively.
@@ -59,11 +60,11 @@ In the following we examine several issues connected to Wikipedia’s gender gap
 \begin{figure}[t]
 	\centering
 	\includegraphics[width=0.85\textwidth]{figures/PropFemaleEditors.png}
-\caption{6 Studies were conducted by the Wikimedia Foundation between 2008 and 2014 to measure the proportions between male and female editors that are active on Wikipedia. The corresponding number of participants is annotated for each study accordingly.~\cite{shammaa2014}~\cite{fung2013}~\cite{tilman2012}}~\cite{pande2011}~\cite{khanna2011}~\cite{glott2010wikipedia} \label{fig:PropFemaleEditors}
+\caption{6 Studies were conducted by the Wikimedia Foundation between 2008 and 2014 to measure the proportions between male and female editors that are active on Wikipedia. The specific studies used can be found in~\autoref{sec:gender-gap-wikipedia:prop-female-editors}.} \label{fig:PropFemaleEditors}
 \end{figure}
 
 \subsection{Low proportions of female editors} \label{sec:gender-gap-wikipedia:prop-female-editors}
-The Wikimedia Foundation conducts various user studies at annual intervals, and the data thus collected is made publicly available. Part of these studies is also to determine the ratio of female to male editors on Wikipedia. We analyzed the results of the following surveys: Global South User Survey (2014)~\cite{shammaa2014}, Gender micro-survey (2013)~\cite{fung2013}, Editor Survey (2012)~\cite{tilman2012}, Editor Survey (December, 2011)~\cite{pande2011}, Editor Survey (April, 2011)~\cite{khanna2011}, UNU-MERIT Survey (2008)~\cite{glott2010wikipedia}. We aimed to see how the ratio of female editors have changed over time. Our results can be seen in Figure~\ref{fig:PropFemaleEditors}. We found that women are strongly underrepresented within editors on Wikipedia, even in the strongest estimate with 22\% of editors being women in 2013. However, a positive trend can also be observed from the year 2011 onward.
+The Wikimedia Foundation conducts various user studies at annual intervals, and the data thus collected is made publicly available. Part of these studies is also to determine the ratio of female to male editors on Wikipedia. We analyzed the results of the following surveys: Global South User Survey (2014)~\cite{shammaa2014}, Gender micro-survey (2013)~\cite{fung2013}, Editor Survey (2012)~\cite{tilman2012}, Editor Survey (December, 2011)~\cite{pande2011}, Editor Survey (April, 2011)~\cite{khanna2011}, UNU-MERIT Survey (2008)~\cite{glott2010wikipedia}. We aimed to see how the ratio of female editors have changed over time. Our results can be seen in~\autoref{fig:PropFemaleEditors}. We found that women are strongly underrepresented within editors on Wikipedia, even in the strongest estimate with 22\% of editors being women in 2013. However, a positive trend can also be observed from the year 2011 onward.
 
 \subsection{Self-perception as a major cause for the gender gap} \label{sec:gender-gap-wikipedia:self-perception}
 A characteristic with a particularly strong influence on the interest in participating in the processing of publicly accessible information is self-perception. Hinnosaar et al. showed, that there are significant differences in self-perception and confidence between both genders~\cite{hinnosaar2019gender}. The reason for that is unknown. This difference could be due to women being socialized to be less self-confident or that their experiences lead them to become less self-confident, as the authors note, but this needs to be subject for further studies and investigations as the paper did not aim to find the cause for the discrepancy found. They showed, that the gender gap in Wikipedia editing is, to a large share, because one’s belief about competence~\cite{hinnosaar2019gender}.
@@ -97,28 +98,17 @@ When it comes to notability criteria, editors need to double check their stance 
 Articles about women, especially historic figures, need to be revised and added. As an example, Wikipedia lacks a lot of data about women from the 1940s to 1950s and existing articles suffer a lot from historic biases since the sources used were already biased. This requires serious investigative efforts to obtaining the facts and curate the information into Wikipedia.
 
 \subsubsection{Language} \label{sec:gender-gap-wikipedia:language}
+The social influence of Wikipedia is undisputed. It is important to help raise public awareness and make people sensitive to the various forms of discrimination. This includes discrimination through language, including that used to write or edit articles on Wikipedia. Stereotypes and prejudices are made about women in all areas of life and social environments. This discriminatory use of language takes place in everyday conversations, in the media, in textbooks, on the labor market, etc. and is accepted, used and passed on, consciously or unconsciously, reflected or unreflected~\cite{peters2017bbc}. Correspondingly stereotypical texts also exist in Wikipedia~\cite{graells2015first}.
+
+The starting point for any discrimination is prevailing social norms, which are set by the majority of a society and do not take into account differences. Non-discriminatory language must be perceived and practiced individually in everyday life. Language is often understood as a neutral means of communication, but it is a very powerful tool when it comes to giving meaning and significance to our world. We discriminate against others not only by what we do, but also by what we say and what we don't say. Wikipedia is particularly subject to implicit language discrimination, for example when relevant information is systematically not mentioned or irrelevant, stereotypical information is highlighted~\cite{wagner2016women}.
+
+Some common spelling rules should be taken into account when writing or editing articles. As an example: women in politics are often described as female politicians, whereas articles about male politicians do not mention gender. This gives the impression that male is the standard gender and that women are "something different" in comparison~\cite{wagner2016women}. When categorizing articles, equal treatment must be ensured, because a similar effect can be caused by, for example, moving female politicians into a separate category called "female politicians" while leaving male politicians in the "politicians" category~\cite{flood2013guardian}. This creates the impression that female politicians need an explicit adjective to distinguish them from politicians in general. This is especially important in the lead part of the article, since most people, as well as software applications, pay most attention to that section.
+
+Likewise, one should avoid using expressions like "She was the first woman to ..." as they put gender above actual achievement and indirectly emphasize that there have been men who have already achieved the same, which could be perceived as reducing the value of the achievement. These formulations can have the effect that the respective woman has succeeded in achieving a less valuable form of said achievement, but is still worthy of attention because of her femininity. Also, family references should be used just as sparingly with women as with men.
+
+The importance of a woman should not be defined exclusively in terms of her relationship with other men. Accordingly, care should be taken to ensure that mentions such as relationship status, marriage, divorce or sexuality are mentioned in a meaningful, context-related way~\cite{graells2015first}. If it is considered appropriate to mention marriage to a man, then expressions such as "man and wife" should be avoided. Instead of "A is the wife of B", "A is married to B" should be used as a form of expression, since otherwise the man is treated in a generalizing manner, but the woman is explicitly marked.
 
 \section{Gender Gap in GitHub} \label{sec:gender-gap-github}
-
-\section{TODO}
-
-\subsection{Momo}
-
-\begin{itemize}
-  \item Populate the subsubsection "Language".
-  \item Write an abstract.
-  \item Write the conclusion (and maybe future work?).
-  \item Put the entire text in Word. See if it detects any further grammatical errors and fix them.
-  \item Read through the entire work and see if it is coherent, nice and tidy.
-  \item Check if the bibliography is okay and if the links and references work.
-\end{itemize}
-
-\subsection{Eva}
-
-\begin{itemize}
-  \item See if your text fits this papers topic (see title) and put it in here if so.
-  \item Write about GitHub.
-\end{itemize}
 
 % References section.
 \bibliographystyle{plain}
